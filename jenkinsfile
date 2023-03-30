@@ -1,0 +1,15 @@
+pipeline {
+     
+     agent any
+ 
+     stages{
+     
+         stags('Git Checkout'){
+
+            steps{
+               git branch:'main', url:'https://github.com/Manjunath72/demo-counter-app.git'
+            }
+         }
+     }
+}
+
